@@ -1,0 +1,25 @@
+input_test=input("Enter something you have eaten in last 24hours : ")
+
+#check for dairy contains input_test
+if "dairy" in input_test:
+    print("It is True that",input_test,"contains dairy")
+else:
+    print("It is False that",input_test,"contains dairy")
+
+#check for nuts contains input_test
+if "nuts" in input_test:
+    print("It is True that",input_test,"contains nuts")
+else:
+    print("It is False that",input_test,"contains nuts")
+
+#check for seafood contains input_test
+if "seafood" in input_test:
+    print("It is True that",input_test,"contains seafood")
+else:
+    print("It is False that",input_test,"contains seafood")
+
+#check for chocolate contains input_test
+if "chocolate" in input_test:
+    print("It is True that",input_test,"contains chocolate")
+else:
+    print("It is False that",input_test,"contains chocolate")
