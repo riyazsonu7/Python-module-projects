@@ -1,0 +1,53 @@
+import random
+class oddeve:
+    print("Let's play a game called odd or even")
+    name = input("what is your name : ")
+    print("Hii", name, "what do you choose (O)dds or (E)vens? : ", end=" ")
+    userpic = input()
+    if userpic.lower() == 'o' or userpic.lower() == "e":
+        userpic = userpic
+    else:
+        while userpic.lower() != 'o' or userpic.lower() != e:
+            userpic = input("please enter only \'O\' or \'E\'")
+            if userpic.lower() == "e" or userpic.lower() == "o":
+                break
+    if userpic == 'o':
+        stringuserpic = "odd"
+        computerpic = "even"
+        charcomputerpic = "E"
+    else:
+        stringuserpic = "even"
+        computerpic = "odd"
+        charcomputerpic = "O"
+    print(name, "has picked", stringuserpic, "computer has picked", computerpic)
+    print("--------------------------")
+    fingerh = int(input("how many fingers do you put out"))
+    while fingerh > 5:
+        if fingerh > 5:
+            print("you entered", fingerh, "which is greater than 5")
+            fingerh = int(input("please enter below 5"))
+        else:
+            # fingerh=int(input("please enter below 5"))
+            break
+
+        # humanfinger=int(input("How many fingers fo you put out :"))
+    computerfinger = random.randrange(0, 6)
+    print("The computer play", computerfinger, "fingers")
+    sum = fingerh + computerfinger
+    print('The sum of', fingerh, "human fingers and", computerfinger, "computer fingers is", sum)
+    if sum % 2 == 0:
+        result = 'e'
+        print('The', sum, 'is even')
+    else:
+        result = 'o'
+        print("The", sum, 'is odd')
+    if result == charcomputerpic.lower():
+        print("That means computer wins")
+    else:
+        print("The human wins")
+
+
+obje=oddeve()
+
+obje
+
