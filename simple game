@@ -1,0 +1,36 @@
+score=0
+ans=input("Are you ready to play the game (yes/no):")
+questions=4
+if ans.lower()=="yes":
+    #question 1
+    q1=input("who won the 2019 chess world cup finals : ")
+    if q1.lower()=="magnus" or q1.lower()=="carlsen" or q1.lower()=="magnus carlsen":
+        score+=1
+        print("correct")
+    else:
+        print("incorrect,the answer is magnus carlsen")
+    #question2
+    q1 = input("what is 2+4+6 : ")
+    if q1.lower() == "12":
+        score += 1
+        print("correct")
+    else:
+        print("incorrect,the answer is 12")
+    #question3
+    q1 = input("which processor is best (i5/i7) : ")
+    if q1.lower() == "i7":
+        score += 1
+        print("correct")
+    else:
+        print("incorrect,the answer is i7")
+    #question4
+    q1 = input("how many seconds a minute have : ")
+    if q1.lower() == "60":
+        score += 1
+        print("correct")
+    else:
+        print("incorrect,the answer is 60")
+    print("Thank you for playing you got",score,"questions correct")
+    mark=(score/questions)*100
+    print("Mark :",mark)
+print("good bye")
