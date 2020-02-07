@@ -1,0 +1,31 @@
+'''Program: Cheese Order
+set values for maximum and minimum order variables
+set value for price variable
+get order_amount input and cast to a number
+check order_amount and give message checking against
+over maximum
+under minimum
+else within maximum and minimum give message with calculated price
+Sample input and output:
+
+Enter cheese order weight (numeric value): 113
+113.0 is more than currently available stock
+Enter cheese order weight (numeric value): .15
+0.15 is below minimum order amount
+Enter cheese order weight (numeric value): 2
+2.0 costs $15.98
+'''
+
+
+cheese_price=1.45 
+minimum_weight=1 
+max_weight=99 
+weight=float(input("enter the weight")) 
+if weight>max_weight:     
+    print(weight,"is more than currently available stock") 
+elif weight<=minimum_weight:     
+    print(weight,"is less than currently available stock")
+elif weight<=100:     
+    print(weight,"is currently available stock","costs $",weight*cheese_price) 
+else:     
+    pass
