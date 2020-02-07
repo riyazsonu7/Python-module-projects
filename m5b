@@ -1,0 +1,37 @@
+def adding_report(report = "T"):
+    total = 0
+    num_temp = ""
+    num_final = ""
+    while True:
+        number_input = input("Enter an integer or Q : ")
+        if number_input.isdigit():
+            if report == "A":
+                total = int(number_input) + total
+                num_final = num_temp + number_input + "\n"
+                num_temp = num_final
+            else:
+                total = int(number_input) + total
+        elif number_input.lower().startswith('q'):
+            if report == "A":
+                print("\nITEMS\n" + num_final + "\n" + "TOTAL\n", total)
+                break
+            else:
+                print("TOTAL\n",total)
+                break
+        else:
+            print(number_input, "is not valid input")
+            
+            
+number_input = ""
+num_temp = ""
+num_final = ""
+total = 0
+report = input("Enter report type 'A' or 'T' : ")
+while True:
+    if report=="A" or report=="T":
+        break
+    else:
+        print(report,"is a invalid input please enter only 'A' or 'T' ")
+        report = input("Enter report type 'A' or 'T' : ")
+print("Input an integer to add to total or 'Q' TO quit")
+holder = adding_report(report)
