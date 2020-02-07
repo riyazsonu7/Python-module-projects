@@ -1,0 +1,33 @@
+'''Create the str_analysis() function that takes 1 string argument and returns a string message. 
+The message will be an analysis of a test string that is passed as an argument to str_analysis(). 
+The function should respond with messages such as:
+
+"big number"
+"small number"
+"all alphabetic"
+"multiple character types"
+The program will call str_analysis() with a string argument from input collected within a while loop. 
+The while loop will test if input is empty (an empty string "") and continue to loop and 
+gather input until the user submits at least 1 character (input cannot be empty).'''
+
+def string_analysis():
+    while True:
+        str=input("enter a word or integer :")
+        if str.isdigit():
+            if int(str)>99:
+                print(str,"is a pretty big")
+                break
+            elif int(str)<99:
+                print(str,"is smaller than expected")
+                break
+        elif str.isalpha():
+            print(str,"is alphabetical character")
+            break
+        elif str=="":
+            str=input("enter a word or integer")
+        else:
+            print(str,"is neither alpha nor digits")
+            break
+
+
+string_analysis()
